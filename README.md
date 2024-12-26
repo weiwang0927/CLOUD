@@ -15,7 +15,7 @@ pip install -r requirements.txt
 
 ## Datasets
 
-We use [Beauty](http://jmcauley.ucsd.edu/data/amazon/links.html), [Sports_and_Outdoors ](http://jmcauley.ucsd.edu/data/amazon/links.html)and [Yelp](https://www.yelp.com/dataset) datasets for experiments. We have uploaded the processed datasets here. However, if you download raw datasets from official websites, please refer to *./dataprocessing/readme.md* for the details about dataset processing.
+We use [Beauty](http://jmcauley.ucsd.edu/data/amazon/links.html), [Sports_and_Outdoors ](http://jmcauley.ucsd.edu/data/amazon/links.html)and [Yelp](https://www.yelp.com/dataset) datasets for experiments. If you download raw datasets from official websites, please refer to *./dataprocessing/readme.md* for the details about dataset processing.
 
 ## Experiments
 
@@ -30,12 +30,6 @@ python main.py -m=test
 For other datasets, please revise the path of dataset and item_num in *main.py*.
 
 If you want to set the probabilities of keep, delete and insert for generating randomly modified sequences when training, please revise the plist in *main.py*.
-
-If you want to get the performances on the changed sequence group and the unchanged sequence group under a certain epoch, for example, evaluate the 100th epoch, please run:
-
-```python
-python evaluate_on_mod.py -e 100
-```
 
 Tips:
 If there is no such large resource, you need to set a smaller batch size in *main.py*. 
